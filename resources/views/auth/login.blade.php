@@ -6,7 +6,7 @@
             @csrf
             
 
-            {{-- Email --}}
+         
             <div class="mb-4">
                 <label for="email">Email</label>
                 <input type="email" name="email"
@@ -18,7 +18,7 @@
                 @enderror
             </div>
 
-            {{-- Password --}}
+          
             <div class="mb-4">
                 <label for="password">Password</label>
                 <input type="password" name="password" 
@@ -29,7 +29,7 @@
                 @enderror
             </div>
 
-            {{-- Remember checkbox --}}
+           
             <div class="mb-4">
                 <input type="checkbox" name="remember" id="remember">
                 <label for="remember">Remember me</label>
@@ -39,7 +39,7 @@
                 <p class="error">{{$message}}</p>
             @enderror
 
-            {{-- submit button --}}
+         
             <button class="btn">Login</button>
 
         </form>

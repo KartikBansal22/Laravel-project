@@ -4,7 +4,7 @@
         <form action="{{ route('register') }}" method="post">
 
             @csrf
-            {{-- usrname --}}
+           
             <div class="mb-4">
                 <label for="username">Username</label>
                 <input type="text" name="username"
@@ -16,7 +16,7 @@
                 @enderror
             </div>
 
-            {{-- Email --}}
+         
             <div class="mb-4">
                 <label for="email">Email</label>
                 <input type="email" name="email"
@@ -28,7 +28,7 @@
                 @enderror
             </div>
 
-            {{-- Password --}}
+          
             <div class="mb-4">
                 <label for="password">Password</label>
                 <input type="password" name="password" 
@@ -40,7 +40,7 @@
             </div>
 
 
-            {{-- Confirm Password --}}
+           
             <div class="mb-8">
                 <label for="password_confirmation">Confirm Password</label>
                 <input type="password" name="password_confirmation" class="input
@@ -48,7 +48,6 @@
                
             </div>
 
-            {{-- submit button --}}
             <button class="btn">Register</button>
 
         </form>

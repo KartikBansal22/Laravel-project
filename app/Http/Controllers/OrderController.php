@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Order;
+use Illuminate\Support\Facades\Auth;
+
+class OrderController extends Controller
+{
+    public function index()
+    {
+        $orders = Order::where('user_id', Auth::id())->latest()->paginate(10);
+        return view('orders.index', compact('orders'));
+    }
+
+    public function show(Order $order)
+    {
+        $this->authorize('view', $order);
+
+        $order->load('items.product');
+        return view('orders.show', compact('order'));
+    }
+}
