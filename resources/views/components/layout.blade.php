@@ -15,9 +15,10 @@
 <header class="bg-slate-800 shadow-lg relative z-50">
     <nav class="max-w-screen-lg mx-auto flex items-center justify-between p-4">
 
-        <a href="{{ route('products.index') }}" class="nav-link font-bold text-white">
-           Whitecliffe Clothhouse
-        </a>
+       <a href="{{ route('products.index') }}" class="nav-link font-bold text-white flex items-center gap-2">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ACcL9B_4ddifagYz1PmFJfA-_9idgOWBTwRnKEPuU7wXnRbY76vPDlp5&s=10" alt="Whitecliffe Clothhouse logo" class="h-9 w-9 rounded object-cover">
+   Whitecliffe Clothhouse
+</a>
 
         @auth
             <div class="flex items-center gap-6">
